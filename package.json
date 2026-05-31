@@ -1,0 +1,23 @@
+{
+  "name": "exampleiq-booking-test",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite --host 0.0.0.0\" \"node server/mock-api.js\"",
+    "dev:app": "vite --host 0.0.0.0",
+    "dev:api": "node server/mock-api.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "express": "latest",
+    "cors": "latest",
+    "concurrently": "latest"
+  },
+  "devDependencies": {}
+}
